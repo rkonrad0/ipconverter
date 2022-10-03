@@ -1,0 +1,32 @@
+<html lang="pl">
+	<head>
+		<title> Konwerter IPv4 </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1> Poznaj swój adres IPv4 </h1>
+		<form>
+			<label>
+				Adres IP: <br>
+				<input type="text" id="ipadress1"> .
+				<input type="text" id="ipadress2"> .
+				<input type="text" id="ipadress3"> .
+				<input type="text" id="ipadress4">
+			</label> <br> <br>
+			<label>
+				Maska podsieci: <br>
+				<input type="text" id="subnetmask1"> .
+				<input type="text" id="subnetmask2"> .
+				<input type="text" id="subnetmask3"> .
+				<input type="text" id="subnetmask4">
+			</label> <br> <br>
+			<input type="button" value="Sprawdź" onclick="send()">
+		</form>
+		<span> Adres sieci: </span> <br>
+		<div id="networkadress">  X </div> <br> 
+		<span> Adres rozgłoszeniowy [broadcast]: </span> <br>
+		<div  id="broadcast">  X </div>
+	</body>
+</html>
