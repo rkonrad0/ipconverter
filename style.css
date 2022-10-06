@@ -13,10 +13,33 @@ h1 {
 	font-family: 'Patua One';
 }
 
-input[type=text] {
-	width: 40px;
+input[type=number] {
+	width: 50px;
 	height: 30px;
 	font-family: 'Poppins';
 	font-size: 15px;
 	text-align: center;
+}
+
+#checkbtn {
+	width: 235px;
+	height: 40px;
+	background-color: #666;
+	font-size: 20px;
+	font-family: 'Poppins';
+	border: 0;
+	color: #bbb;
+	transition: 0.2s ease-in-out;
+}
+
+#checkbtn:hover {
+	background-color: #999;
+	color: #eee;
+}
+
+.adresses {
+	font-family: 'Patua One';
+	font-size: 40px;
+	margin-top: -10px;
+	color: #fff;
 }

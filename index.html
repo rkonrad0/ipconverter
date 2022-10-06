@@ -6,28 +6,28 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<h1> Poznaj swój adres IPv4 </h1>
+		<h1> IPv4 Converter </h1>
 		<form>
 			<label>
-				Adres IP: <br>
-				<input type="text" id="ipadress1"> .
-				<input type="text" id="ipadress2"> .
-				<input type="text" id="ipadress3"> .
-				<input type="text" id="ipadress4">
+				IP Adress: <br>
+				<input type="number" id="ipadress1"> .
+				<input type="number" id="ipadress2"> .
+				<input type="number" id="ipadress3"> .
+				<input type="number" id="ipadress4">
 			</label> <br> <br>
 			<label>
-				Maska podsieci: <br>
-				<input type="text" id="subnetmask1"> .
-				<input type="text" id="subnetmask2"> .
-				<input type="text" id="subnetmask3"> .
-				<input type="text" id="subnetmask4">
+				Subnet mask: <br>
+				<input type="number" id="subnetmask1"> .
+				<input type="number" id="subnetmask2"> .
+				<input type="number" id="subnetmask3"> .
+				<input type="number" id="subnetmask4">
 			</label> <br><br>
-			<input type="button" value="Sprawdź" onclick="calculate()"><br>
+			<input type="button" value="Check" onclick="calculate()" id="checkbtn"><br>
 		</form>
 		<span style="color: red" id="wrongnumber"> </span><br>
-		<span> Adres sieci: </span> <br>
-		<div id="networkadress" style="font-family: Times New Roman;">   </div> <br> 
-		<span> Adres rozgłoszeniowy [broadcast]: </span> <br>
-		<div  id="broadcast" style="font-family: Times New Roman;">   </div>
+		<span> Network adress: </span> <br>
+		<div id="networkadress" class="adresses">   </div> <br> 
+		<span> Broadcast: </span> <br>
+		<div  id="broadcast" class="adresses">   </div>
 	</body>
 </html>
